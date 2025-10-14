@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>TC Client</title>
+    <style type="text/css">
+        body {
+            background-color: #2a2d3e;
+            color: white;
+            text-align: center;
+            padding-top: 60px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        
+        .red-box {
+            width: 300px;
+            height: 100px;
+            background-color: red;
+            margin: 0 auto 50px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .boxes-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .black-box {
+            width: 280px;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.7); /* 黑色背景，70%不透明度 */
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .black-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .box-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .box-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .box-desc {
+            font-size: 0.9rem;
+            color: #aaa;
+            line-height: 1.4;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding: 20px;
+            color: #6c8eff;
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .boxes-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .black-box {
+                width: 90%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>	
+    <div class="container">
+        <img src="TC.png" alt="TC Logo"/>
+        <h1>TC Client</h1>
+        
+        <div class="red-box">
+            <h1>测试</h1>
+        </div>
+        
+        <div class="boxes-container">
+            <div class="black-box">
+                <div class="box-icon">⚡</div>
+                <div class="box-title">实用性</div>
+                <div class="box-desc">提供卓越的辅助表现，确保用户的体验</div>
+            </div>
+            
+            <div class="black-box">
+                <div class="box-icon">🔒</div>
+                <div class="box-title">安全性</div>
+                <div class="box-desc">高级防封保护，保障您的账号数据安全</div>
+            </div>
+            
+            <div class="black-box">
+                <div class="box-icon">🔄</div>
+                <div class="box-title">兼容性</div>
+                <div class="box-desc">支持多种系统和设备，随时随地使用</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            TC Client &copy; 2023 - 专为效率而生
+        </div>
+    </div>
+</body>
+</html>
